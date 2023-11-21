@@ -4,6 +4,7 @@ using RepositoryLayer.Entities;
 using RepositoryLayer.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RepositoryLayer.Services
@@ -45,6 +46,19 @@ namespace RepositoryLayer.Services
                 users.Add(user);
             }
             return users;
+        }
+
+        public bool CheckUser(string mailId)
+        {
+            UserEntity isUserExist = funDooDBContext.Users.ToList().Find(user => user.Email == mailId);
+            if (isUserExist == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

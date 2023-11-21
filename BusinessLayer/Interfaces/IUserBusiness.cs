@@ -9,5 +9,6 @@ namespace BusinessLayer.Interfaces
         UserEntity Register(RegisterModel register);
         UserEntity Login(int id);
         List<UserEntity> GetAllUsers();
+        bool CheckUser(string mail);
     }
 }

@@ -61,5 +61,20 @@ namespace FunDooNotesApplication.Controllers
                 return result;
             }
         }
+
+        [HttpGet]
+        [Route("CheckUser")]
+        public string CheckUser(string MailId)
+        {
+            bool IsUserExist = userBusiness.CheckUser(MailId);
+            if (IsUserExist)
+            {
+                return "User Found.";
+            }
+            else
+            {
+                return "User Not Found.";
+            }
+        }
     }
 }

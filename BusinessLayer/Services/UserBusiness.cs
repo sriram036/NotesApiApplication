@@ -31,5 +31,10 @@ namespace BusinessLayer.Services
         { 
             return userRepo.GetAllUsers();
         }
+
+        public bool CheckUser(string Email)
+        {
+            return userRepo.CheckUser(Email);
+        }
     }
 }

@@ -7,7 +7,7 @@ namespace RepositoryLayer.Interfaces
     public interface IUserRepo
     {
         UserEntity Register(RegisterModel register);
-        UserEntity Login(int id);
+        string Login(LoginModel loginModel);
         List<UserEntity> GetAllUsers();
         bool CheckUser(string mail);
     }

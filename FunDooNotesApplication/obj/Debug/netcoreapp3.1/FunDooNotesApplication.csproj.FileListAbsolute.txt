@@ -49,3 +49,16 @@ C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\D
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\ModelLayer.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\ModelLayer.pdb
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\obj\Debug\netcoreapp3.1\FunDooNotesApplication.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll

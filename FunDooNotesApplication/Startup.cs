@@ -35,6 +35,7 @@ namespace FunDooNotesApplication
             services.AddDbContext<FunDooDBContext>(c => c.UseSqlServer(Configuration["ConnectionStrings:FunDooConnections"]));
             services.AddTransient<IUserBusiness,UserBusiness>();
             services.AddTransient<IUserRepo,UserRepo>();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,6 +55,13 @@ namespace FunDooNotesApplication
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Employee API V1");
             });
         }
     }

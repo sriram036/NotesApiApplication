@@ -22,9 +22,9 @@ namespace BusinessLayer.Services
             return userRepo.Register(register);
         }
 
-        public UserEntity Login(int id)
+        public string Login(LoginModel loginModel)
         {
-            return userRepo.Login(id);
+            return userRepo.Login(loginModel);
         }
 
         public List<UserEntity> GetAllUsers() 

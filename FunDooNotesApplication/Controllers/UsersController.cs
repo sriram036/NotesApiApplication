@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using ModelLayer.Models;
 using RepositoryLayer.Entities;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace FunDooNotesApplication.Controllers
         public UsersController(IUserBusiness userBusiness)
         {
             this.userBusiness = userBusiness;
+            
         }
 
         [HttpPost]
@@ -32,18 +34,18 @@ namespace FunDooNotesApplication.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("Login")]
-        public ActionResult Login(int id)
+        public ActionResult Login(LoginModel loginModel)
         {
-            var result = userBusiness.Login(id);
+            var result = userBusiness.Login(loginModel);
             if (result == null)
             {
-                return Ok(new ResponseModel<UserEntity> { IsSuccess = false, Message = "User Not Found", Data = result });
+                return Ok(new ResponseModel<string> { IsSuccess = false, Message = "Login Failed", Data = result });
             }
             else
             {
-                return Ok(new ResponseModel<UserEntity> { IsSuccess = true, Message = "User Found", Data = result } );
+                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Login Successful", Data = result } );
             }
         }
 
@@ -64,16 +66,16 @@ namespace FunDooNotesApplication.Controllers
 
         [HttpGet]
         [Route("CheckUser")]
-        public string CheckUser(string MailId)
+        public ActionResult CheckUser(string MailId)
         {
             bool IsUserExist = userBusiness.CheckUser(MailId);
             if (IsUserExist)
             {
-                return "User Found.";
+                return Ok(new ResponseModel<bool> { IsSuccess = true, Message = "User Found", Data = IsUserExist});
             }
             else
             {
-                return "User Not Found.";
+                return Ok(new ResponseModel<bool> { IsSuccess = false, Message = "User Not Found", Data = IsUserExist });
             }
         }
     }

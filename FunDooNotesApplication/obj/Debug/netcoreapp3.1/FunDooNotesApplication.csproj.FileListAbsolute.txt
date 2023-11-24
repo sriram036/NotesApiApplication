@@ -62,3 +62,13 @@ C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\D
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Automatonymous.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\GreenPipes.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\MassTransit.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NewId.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll

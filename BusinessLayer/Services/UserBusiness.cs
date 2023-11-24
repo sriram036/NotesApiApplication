@@ -36,5 +36,16 @@ namespace BusinessLayer.Services
         {
             return userRepo.CheckUser(Email);
         }
+
+
+        public ForgotPasswordModel ForgotPassword(string Email) 
+        { 
+            return userRepo.ForgotPassword(Email);
+        }
+
+        public bool RestPassword(ResetPasswordModel reset)
+        {
+            return userRepo.ResetPassword(reset);
+        }
     }
 }

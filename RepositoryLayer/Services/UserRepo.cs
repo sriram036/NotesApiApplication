@@ -57,19 +57,19 @@ namespace RepositoryLayer.Services
             }
             else
             {
-                string token = GenerateToken(userEntity.Email, userEntity.Password);
+                string token = GenerateToken(userEntity.Email, userEntity.UserId);
                 return token;
             }
         }
 
-        public string GenerateToken(string Email, string Password)
+        public string GenerateToken(string Email, int UserId)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var claims = new[]
             {
                 new Claim("Email",Email),
-                new Claim("Password",Password)
+                new Claim("UserId",UserId.ToString())
             };
             var token = new JwtSecurityToken(_config["Jwt:Issue"],
                 _config["Jwt:Audience"],
@@ -114,6 +114,32 @@ namespace RepositoryLayer.Services
             else
             {
                 return true;
+            }
+        }
+
+        public ForgotPasswordModel ForgotPassword(string Email)
+        {
+            UserEntity User = funDooDBContext.Users.ToList().Find(user => user.Email == Email );
+            ForgotPasswordModel forgotPassword = new ForgotPasswordModel();
+            forgotPassword.Email = User.Email;
+            forgotPassword.UserId = User.UserId;
+            forgotPassword.Token = GenerateToken(User.Email, User.UserId);
+            return forgotPassword;
+        }
+
+        public bool ResetPassword(ResetPasswordModel resetPasswordModel)
+        {
+            UserEntity User = funDooDBContext.Users.ToList().Find(user => user.Email == resetPasswordModel.Email);
+            
+            if(CheckUser(resetPasswordModel.Email))
+            {
+                User.Password = EncodePassword(resetPasswordModel.Password);
+                funDooDBContext.SaveChanges();
+                return true;
+            }
+            else
+            {
+                return false;
             }
         }
     }

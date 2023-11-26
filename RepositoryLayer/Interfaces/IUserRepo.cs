@@ -11,6 +11,6 @@ namespace RepositoryLayer.Interfaces
         List<UserEntity> GetAllUsers();
         bool CheckUser(string mail);
         ForgotPasswordModel ForgotPassword(string Email);
-        bool ResetPassword(ResetPasswordModel reset);
+        bool ResetPassword(string Email, ResetPasswordModel reset);
     }
 }

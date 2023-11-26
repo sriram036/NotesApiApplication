@@ -11,6 +11,6 @@ namespace BusinessLayer.Interfaces
         List<UserEntity> GetAllUsers();
         bool CheckUser(string mail);
         ForgotPasswordModel ForgotPassword(string Email);
-        bool RestPassword(ResetPasswordModel reset);
+        bool ResetPassword(string Email, ResetPasswordModel reset);
     }
 }

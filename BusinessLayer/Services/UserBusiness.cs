@@ -43,9 +43,9 @@ namespace BusinessLayer.Services
             return userRepo.ForgotPassword(Email);
         }
 
-        public bool RestPassword(ResetPasswordModel reset)
+        public bool ResetPassword(string Email, ResetPasswordModel reset)
         {
-            return userRepo.ResetPassword(reset);
+            return userRepo.ResetPassword(Email,reset);
         }
     }
 }

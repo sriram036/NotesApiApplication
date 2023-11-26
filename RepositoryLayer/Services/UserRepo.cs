@@ -127,13 +127,14 @@ namespace RepositoryLayer.Services
             return forgotPassword;
         }
 
-        public bool ResetPassword(ResetPasswordModel resetPasswordModel)
+        public bool ResetPassword(string Email ,ResetPasswordModel resetPasswordModel)
         {
-            UserEntity User = funDooDBContext.Users.ToList().Find(user => user.Email == resetPasswordModel.Email);
+            UserEntity User = funDooDBContext.Users.ToList().Find(user => user.Email == Email);
             
-            if(CheckUser(resetPasswordModel.Email))
+            if(CheckUser(User.Email))
             {
-                User.Password = EncodePassword(resetPasswordModel.Password);
+                User.Password = EncodePassword(resetPasswordModel.ConfirmPassword);
+                User.ChangedAt = DateTime.Now; 
                 funDooDBContext.SaveChanges();
                 return true;
             }

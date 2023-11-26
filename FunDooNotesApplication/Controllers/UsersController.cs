@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interfaces;
 using MassTransit;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -100,7 +101,7 @@ namespace FunDooNotesApplication.Controllers
 
                     await endPoint.Send(forgotPasswordModel);
 
-                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Mail Sent Successfully", Data = Email });
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Mail Sent Successfully", Data = forgotPasswordModel.Token });
                 }
                 else
                 {
@@ -112,12 +113,13 @@ namespace FunDooNotesApplication.Controllers
                 throw ex;
             }
         }
-
+        [Authorize]
         [HttpPost]
         [Route("ResetPassword")]
         public ActionResult ResetPassword(ResetPasswordModel reset)
         {
-            if (userBusiness.RestPassword(reset))
+            string Email = User.FindFirst("Email").Value;
+            if (userBusiness.ResetPassword(Email, reset))
             {
                 return Ok(new ResponseModel<bool> { IsSuccess = true, Message = "Password Changed", Data = true });
             }

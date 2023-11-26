@@ -40,6 +40,10 @@ namespace FunDooNotesApplication
             services.AddDbContext<FunDooDBContext>(c => c.UseSqlServer(Configuration["ConnectionStrings:FunDooConnections"]));
             services.AddTransient<IUserBusiness,UserBusiness>();
             services.AddTransient<IUserRepo,UserRepo>();
+            services.AddTransient<IReviewBusiness,ReviewBusiness>();
+            services.AddTransient<IReviewRepo,ReviewRepo>();
+            services.AddTransient<INotesBusiness, NotesBusiness>();
+            services.AddTransient<INotesRepo, NotesRepo>();
             services.AddSwaggerGen(
                 option =>
                 {
@@ -110,6 +114,8 @@ namespace FunDooNotesApplication
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseAuthentication();
 
             app.UseHttpsRedirection();
 

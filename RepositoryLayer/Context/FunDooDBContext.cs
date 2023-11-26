@@ -11,5 +11,9 @@ namespace RepositoryLayer.Context
         public FunDooDBContext(DbContextOptions dbContext) : base(dbContext) { }
 
         public DbSet<UserEntity> Users { get; set; }
+
+        public DbSet<NotesEntity> Notes { get; set; }
+
+        public DbSet<ReviewEntity> Reviews { get; set; }
     }
 }

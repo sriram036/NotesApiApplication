@@ -24,8 +24,6 @@ namespace RepositoryLayer.Services
             notesEntity.Title = notesModel.Title;
             notesEntity.Description = notesModel.Description;
             notesEntity.Reminder = notesModel.Reminder;
-            notesEntity.Colour = notesModel.Colour;
-            notesEntity.Image = notesModel.Image;
             notesEntity.CreatedAt = DateTime.Now;
             notesEntity.UpdatedAt = DateTime.Now;
             notesEntity.UserId = UserId;
@@ -49,14 +47,12 @@ namespace RepositoryLayer.Services
 
         public NotesEntity UpdateNote(int NotesId, NotesModel notesModel, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if(notesEntity.UserId == UserId)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if(notesEntity != null)
             {
                 notesEntity.Title = notesModel.Title;
                 notesEntity.Description = notesModel.Description;
                 notesEntity.Reminder = notesEntity.Reminder;
-                notesEntity.Colour = notesModel.Colour;
-                notesEntity.Image = notesModel.Image;
                 notesEntity.UpdatedAt = DateTime.Now;
                 funDooDBContext.SaveChanges();
                 return notesEntity;
@@ -69,8 +65,8 @@ namespace RepositoryLayer.Services
 
         public bool DeleteNote(int NotesId, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if( notesEntity.UserId == UserId && notesEntity.IsTrash == true)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if(notesEntity.IsTrash == true)
             {
                 funDooDBContext.Notes.Remove(notesEntity);
                 funDooDBContext.SaveChanges();
@@ -82,82 +78,82 @@ namespace RepositoryLayer.Services
             }
         }
 
-        public bool PinNote(int NotesId, int UserId)
+        public int PinNote(int NotesId, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if (notesEntity.UserId == UserId)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if (notesEntity != null)
             {
                 if (notesEntity.IsPin)
                 {
                     notesEntity.IsPin = false;
                     funDooDBContext.SaveChanges();
-                    return false;
+                    return 1;
                 }
                 else
                 {
                     notesEntity.IsPin = true;
                     funDooDBContext.SaveChanges();
-                    return true;
+                    return 2;
                 }
             }
             else
             {
-                return false;
+                return 3;
             }
         }
 
-        public bool ArchiveNote(int NotesId, int UserId)
+        public int ArchiveNote(int NotesId, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if (notesEntity.UserId == UserId)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if (notesEntity != null)
             {
                 if (notesEntity.IsArchive)
                 {
                     notesEntity.IsArchive = false;
                     funDooDBContext.SaveChanges();
-                    return false;
+                    return 1;
                 }
                 else
                 {
                     notesEntity.IsArchive = true;
                     funDooDBContext.SaveChanges();
-                    return true;
+                    return 2;
                 }
             }
             else
             {
-                return false;
+                return 3;
             }
         }
 
-        public bool TrashNote(int NotesId, int UserId)
+        public int TrashNote(int NotesId, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if (notesEntity.UserId == UserId)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if (notesEntity != null)
             {
                 if (notesEntity.IsTrash)
                 {
                     notesEntity.IsTrash = false;
                     funDooDBContext.SaveChanges();
-                    return false;
+                    return 1;
                 }
                 else
                 {
                     notesEntity.IsTrash = true;
                     funDooDBContext.SaveChanges();
-                    return true;
+                    return 2;
                 }
             }
             else
             {
-                return false;
+                return 3;
             }
         }
 
         public bool AddColourInNote(int NotesId, string Colour, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if(notesEntity.UserId == UserId)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if(notesEntity != null)
             {
                 notesEntity.Colour = Colour;
                 funDooDBContext.SaveChanges();
@@ -169,20 +165,27 @@ namespace RepositoryLayer.Services
             }
         }
 
-        public bool RestoreNote(int NotesId, int UserId)
+        public int RestoreNote(int NotesId, int UserId)
         {
-            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId);
-            if(notesEntity.IsTrash && notesEntity.UserId == UserId)
+            NotesEntity notesEntity = funDooDBContext.Notes.FirstOrDefault(note => note.NotesId == NotesId && note.UserId == UserId);
+            if(notesEntity != null)
             {
-                notesEntity.IsTrash = false;
-                funDooDBContext.SaveChanges();
-                return true;
+                if (notesEntity.IsTrash)
+                {
+                    notesEntity.IsTrash = false;
+                    funDooDBContext.SaveChanges();
+                    return 1;
+                }
+                else
+                {
+                    notesEntity.IsTrash = true;
+                    funDooDBContext.SaveChanges();
+                    return 2;
+                }
             }
             else
             {
-                notesEntity.IsTrash = true;
-                funDooDBContext.SaveChanges();
-                return false;
+                return 3;
             }
         }
     }

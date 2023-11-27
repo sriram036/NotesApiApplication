@@ -44,6 +44,8 @@ namespace FunDooNotesApplication
             services.AddTransient<IReviewRepo,ReviewRepo>();
             services.AddTransient<INotesBusiness, NotesBusiness>();
             services.AddTransient<INotesRepo, NotesRepo>();
+            services.AddTransient<ILabelBusiness, LabelBusiness>();
+            services.AddTransient<ILabelRepo, LabelRepo>();
             services.AddSwaggerGen(
                 option =>
                 {

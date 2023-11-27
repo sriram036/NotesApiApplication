@@ -14,15 +14,15 @@ namespace RepositoryLayer.Interfaces
 
         bool DeleteNote(int NotesId, int UserId);
 
-        bool PinNote(int NotesId, int UserId);
+        int PinNote(int NotesId, int UserId);
 
-        bool ArchiveNote(int NotesId, int UserId);
+        int ArchiveNote(int NotesId, int UserId);
 
-        bool TrashNote(int NotesId, int UserId);
+        int TrashNote(int NotesId, int UserId);
 
         bool AddColourInNote(int NotesId, string Colour, int UserId);
 
-        bool RestoreNote(int NotesId, int UserId);
+        int RestoreNote(int NotesId, int UserId);
 
     }
 }

@@ -12,8 +12,5 @@ namespace ModelLayer.Models
 
         public DateTime Reminder { get; set; }
 
-        public string Colour { get; set; }
-
-        public string Image { get; set; }
     }
 }

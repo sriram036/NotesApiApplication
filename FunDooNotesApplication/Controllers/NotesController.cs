@@ -100,14 +100,18 @@ namespace FunDooNotesApplication.Controllers
         public ActionResult PinNote(int NotesId)
         {
             int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsPin = notesBusiness.PinNote(NotesId, UserId);
-            if(IsPin)
+            int IsPin = notesBusiness.PinNote(NotesId, UserId);
+            if(IsPin == 2)
             {
                 return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Pinned" });
             }
+            else if (IsPin == 1)
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnPinned" });
+            }
             else
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "Note is not Pinned" });
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
             }
         }
 
@@ -117,14 +121,18 @@ namespace FunDooNotesApplication.Controllers
         public ActionResult ArchiveNote(int NotesId)
         {
             int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsArchive = notesBusiness.ArchiveNote(NotesId, UserId);
-            if (IsArchive)
+            int IsArchive = notesBusiness.ArchiveNote(NotesId, UserId);
+            if (IsArchive == 2)
             {
                 return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Archived" });
             }
+            else if (IsArchive == 1)
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnArchived" });
+            }
             else
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "Note is not Archived" });
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
             }
         }
 
@@ -134,14 +142,18 @@ namespace FunDooNotesApplication.Controllers
         public ActionResult TrashNote(int NotesId)
         {
             int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsTrash = notesBusiness.TrashNote(NotesId, UserId);
-            if (IsTrash)
+            int IsTrash = notesBusiness.TrashNote(NotesId, UserId);
+            if (IsTrash == 2)
             {
                 return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Trashed" });
             }
+            else if (IsTrash == 1)
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnTrashed" });
+            }
             else
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "Note is not Trashed" });
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
             }
         }
 
@@ -169,15 +181,19 @@ namespace FunDooNotesApplication.Controllers
         public ActionResult RestoreNote(int NotesId)
         {
             int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsRestored = notesBusiness.RestoreNote(NotesId, UserId);
+            int IsRestored = notesBusiness.RestoreNote(NotesId, UserId);
 
-            if (IsRestored)
+            if (IsRestored == 1)
             {
                 return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Note is Restored", Data = "UserId Matched" });
             }
+            else if (IsRestored == 2)
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note is not Restored", Data = "Note is not in Trash" });
+            }
             else
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note is not Restored", Data = "UserId Not Matched" });
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
             }
         }
     }

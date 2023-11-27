@@ -37,17 +37,17 @@ namespace BusinessLayer.Services
             return notesRepo.DeleteNote(NotesId, UserId);
         }
 
-        public bool PinNote(int NotesId, int UserId)
+        public int PinNote(int NotesId, int UserId)
         {
             return notesRepo.PinNote(NotesId, UserId);
         }
 
-        public bool ArchiveNote(int NotesId, int UserId)
+        public int ArchiveNote(int NotesId, int UserId)
         {
             return notesRepo.ArchiveNote(NotesId, UserId);
         }
 
-        public bool TrashNote(int NotesId, int UserId)
+        public int TrashNote(int NotesId, int UserId)
         {
             return notesRepo.TrashNote(NotesId, UserId);
         }
@@ -57,7 +57,7 @@ namespace BusinessLayer.Services
             return notesRepo.AddColourInNote(NotesId, Colour, UserId);
         }
 
-        public bool RestoreNote(int NotesId, int UserId)
+        public int RestoreNote(int NotesId, int UserId)
         {
             return notesRepo.RestoreNote(NotesId, UserId);
         }

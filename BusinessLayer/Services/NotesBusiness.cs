@@ -36,5 +36,30 @@ namespace BusinessLayer.Services
         {
             return notesRepo.DeleteNote(NotesId, UserId);
         }
+
+        public bool PinNote(int NotesId, int UserId)
+        {
+            return notesRepo.PinNote(NotesId, UserId);
+        }
+
+        public bool ArchiveNote(int NotesId, int UserId)
+        {
+            return notesRepo.ArchiveNote(NotesId, UserId);
+        }
+
+        public bool TrashNote(int NotesId, int UserId)
+        {
+            return notesRepo.TrashNote(NotesId, UserId);
+        }
+
+        public bool AddColourInNote(int NotesId, string Colour, int UserId)
+        {
+            return notesRepo.AddColourInNote(NotesId, Colour, UserId);
+        }
+
+        public bool RestoreNote(int NotesId, int UserId)
+        {
+            return notesRepo.RestoreNote(NotesId, UserId);
+        }
     }
 }

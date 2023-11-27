@@ -13,5 +13,15 @@ namespace BusinessLayer.Interfaces
         NotesEntity UpdateNote(int NotesId, NotesModel notesModel, int UserId);
 
         bool DeleteNote(int NotesId, int UserId);
+
+        bool PinNote(int NotesId, int UserId);
+
+        bool ArchiveNote(int NotesId, int UserId);
+
+        bool TrashNote(int NotesId, int UserId);
+
+        bool AddColourInNote(int NotesId, string Colour, int UserId);
+
+        bool RestoreNote(int NotesId, int UserId);
     }
 }

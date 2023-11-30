@@ -10,7 +10,5 @@ namespace ModelLayer.Models
 
         public string Description { get; set; }
 
-        public DateTime Reminder { get; set; }
-
     }
 }

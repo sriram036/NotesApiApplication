@@ -16,9 +16,24 @@ namespace BusinessLayer.Services
             this.labelRepo = labelRepo;
         }
 
-        public LabelEntity AddLabel(string LabelName, int NoteId, int UserId)
+        public int AddLabel(string LabelName, int NoteId, int UserId)
         {
             return labelRepo.AddLabel(LabelName, NoteId, UserId);
+        }
+
+        public List<LabelEntity> GetLabels(int UserId)
+        {
+            return labelRepo.GetLabels(UserId);
+        }
+
+        public LabelEntity UpdateLabel(int LabelId, int NoteId, int UserId, string LabelName)
+        {
+            return labelRepo.UpdateLabel(LabelId, NoteId, UserId, LabelName);
+        }
+
+        public bool DeleteLabel(int LabelId, int NoteId, int UserId)
+        {
+            return labelRepo.DeleteLabel(LabelId, NoteId, UserId);
         }
     }
 }

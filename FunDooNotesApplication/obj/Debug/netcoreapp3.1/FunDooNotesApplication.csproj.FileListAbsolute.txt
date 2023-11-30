@@ -72,3 +72,8 @@ C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\D
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NewId.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll

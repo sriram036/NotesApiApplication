@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interfaces;
+using Microsoft.AspNetCore.Http;
 using ModelLayer.Models;
 using RepositoryLayer.Entities;
 using RepositoryLayer.Interfaces;
@@ -60,6 +61,16 @@ namespace BusinessLayer.Services
         public int RestoreNote(int NotesId, int UserId)
         {
             return notesRepo.RestoreNote(NotesId, UserId);
+        }
+
+        public bool AddImage(int NoteId, int UserId, IFormFile Image)
+        {
+            return notesRepo.AddImage(NoteId, UserId, Image);
+        }
+
+        public bool AddReminder(int NoteId, int UserId, DateTime Reminder)
+        {
+            return notesRepo.AddReminder(NoteId, UserId, Reminder);
         }
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Models;
 using RepositoryLayer.Entities;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO.Compression;
@@ -22,12 +23,12 @@ namespace FunDooNotesApplication.Controllers
             this.notesBusiness = notesBusiness;
         }
 
-        [Authorize]
         [HttpPost]
         [Route("CreateNote")]
         public ActionResult CreateNote(NotesModel notesModel)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
+            //int UserId = int.Parse(User.FindFirst("UserId").Value);
+            int UserId = (int) HttpContext.Session.GetInt32("UserId"); 
             NotesEntity notesEntity = notesBusiness.CreateNote(UserId, notesModel);
             if(notesEntity == null)
             {
@@ -194,6 +195,40 @@ namespace FunDooNotesApplication.Controllers
             else
             {
                 return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+            }
+        }
+
+        [Authorize]
+        [HttpPut]
+        [Route("AddImage")]
+        public ActionResult AddImage(int NoteId, IFormFile Image)
+        {
+            int UserId = int.Parse(User.FindFirst("UserId").Value);
+            bool IsImageAdded = notesBusiness.AddImage(NoteId, UserId, Image);
+            if(IsImageAdded)
+            {
+                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Image Added Successfully", Data = "UserId Matched" });
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Image Not Added", Data = "UserId not Matched" });
+            }
+        }
+
+        [Authorize]
+        [HttpPut]
+        [Route("AddReminder")]
+        public ActionResult AddReminder(int NoteId, DateTime Reminder)
+        {
+            int UserId = int.Parse(User.FindFirst("UserId").Value);
+            bool IsReminderAdded = notesBusiness.AddReminder(NoteId, UserId, Reminder);
+            if(IsReminderAdded)
+            {
+                return Ok(new ResponseModel<DateTime> { IsSuccess = true, Message = "Reminder Added", Data = Reminder });
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<DateTime> { IsSuccess = false, Message = "Reminder not Added", Data = Reminder });
             }
         }
     }

@@ -1,5 +1,7 @@
-﻿using ModelLayer.Models;
+﻿using Microsoft.AspNetCore.Http;
+using ModelLayer.Models;
 using RepositoryLayer.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace RepositoryLayer.Interfaces
@@ -23,6 +25,10 @@ namespace RepositoryLayer.Interfaces
         bool AddColourInNote(int NotesId, string Colour, int UserId);
 
         int RestoreNote(int NotesId, int UserId);
+
+        bool AddImage(int NoteId, int UserId, IFormFile Image);
+
+        bool AddReminder(int NoteId, int UserId, DateTime Reminder);
 
     }
 }

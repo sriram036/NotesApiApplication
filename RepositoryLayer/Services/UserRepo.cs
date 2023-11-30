@@ -143,5 +143,18 @@ namespace RepositoryLayer.Services
                 return false;
             }
         }
+
+        public UserEntity LoginToReturnUserEntity(LoginModel loginModel)
+        {
+            UserEntity userEntity = funDooDBContext.Users.ToList().Find(x => x.Email == loginModel.Email && x.Password == EncodePassword(loginModel.Password));
+            if (userEntity == null)
+            {
+                return null;
+            }
+            else
+            {
+                return userEntity;
+            }
+        }
     }
 }

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using ModelLayer.Models;
 using RepositoryLayer.Entities;
 using RepositoryLayer.Services;
@@ -19,10 +20,12 @@ namespace FunDooNotesApplication.Controllers
     {
         private readonly IUserBusiness userBusiness;
         private readonly IBus bus;
-        public UsersController(IUserBusiness userBusiness, IBus bus)
+        private readonly ILogger<UsersController> logger;
+        public UsersController(IUserBusiness userBusiness, IBus bus, ILogger<UsersController> logger)
         {
             this.userBusiness = userBusiness;
             this.bus = bus;
+            this.logger = logger;
         }
 
         [HttpPost]
@@ -51,8 +54,25 @@ namespace FunDooNotesApplication.Controllers
             }
             else
             {
+                logger.LogInformation("Login Successful");
                 return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Login Successful", Data = result } );
             }
+        }
+
+        [HttpPost]
+        [Route("LoginToGetUser")]
+        public ActionResult LoginToReturnUserEntity(LoginModel loginModel)
+        {
+            UserEntity userEntity = userBusiness.LoginToReturnUserEntity(loginModel);
+            if(userEntity != null)
+            {
+                HttpContext.Session.SetInt32("UserId",userEntity.UserId);
+                return Ok(new ResponseModel<UserEntity> { IsSuccess = true, Message = "Login Successful", Data = userEntity });
+            }
+            else
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Login Failed", Data = "EmailId or Password is wrong" });
+            } 
         }
 
         [HttpGet]

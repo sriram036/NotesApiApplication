@@ -46,6 +46,15 @@ namespace FunDooNotesApplication
             services.AddTransient<INotesRepo, NotesRepo>();
             services.AddTransient<ILabelBusiness, LabelBusiness>();
             services.AddTransient<ILabelRepo, LabelRepo>();
+            services.AddTransient<ICollaboratorBusiness, CollaboratorBusiness>();
+            services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
+            services.AddDistributedMemoryCache();
+            services.AddSession(x =>
+            {
+                x.IdleTimeout = TimeSpan.FromMinutes(1);
+                x.Cookie.HttpOnly = true;
+                x.Cookie.IsEssential = true;
+            });
             services.AddSwaggerGen(
                 option =>
                 {
@@ -116,7 +125,10 @@ namespace FunDooNotesApplication
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
+            app.UseSession();
+
+
             app.UseAuthentication();
 
             app.UseHttpsRedirection();

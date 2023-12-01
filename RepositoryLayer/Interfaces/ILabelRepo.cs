@@ -5,7 +5,7 @@ namespace RepositoryLayer.Interfaces
 {
     public interface ILabelRepo
     {
-        int AddLabel(string LabelName, int NoteId, int UserId);
+        bool AddLabel(string LabelName, int NoteId, int UserId);
 
         List<LabelEntity> GetLabels(int UserId);
 

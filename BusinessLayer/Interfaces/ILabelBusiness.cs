@@ -5,7 +5,7 @@ namespace BusinessLayer.Interfaces
 {
     public interface ILabelBusiness
     {
-        int AddLabel(string LabelName, int NoteId, int UserId);
+        bool AddLabel(string LabelName, int NoteId, int UserId);
 
         List<LabelEntity> GetLabels(int UserId);
 

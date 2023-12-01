@@ -27,8 +27,8 @@ namespace BusinessLayer.Services
             return userRepo.Login(loginModel);
         }
 
-        public List<UserEntity> GetAllUsers() 
-        { 
+        public List<UserEntity> GetAllUsers()
+        {
             return userRepo.GetAllUsers();
         }
 
@@ -38,19 +38,24 @@ namespace BusinessLayer.Services
         }
 
 
-        public ForgotPasswordModel ForgotPassword(string Email) 
-        { 
+        public ForgotPasswordModel ForgotPassword(string Email)
+        {
             return userRepo.ForgotPassword(Email);
         }
 
         public bool ResetPassword(string Email, ResetPasswordModel reset)
         {
-            return userRepo.ResetPassword(Email,reset);
+            return userRepo.ResetPassword(Email, reset);
         }
 
         public UserEntity LoginToReturnUserEntity(LoginModel loginModel)
         {
             return userRepo.LoginToReturnUserEntity(loginModel);
+        }
+
+        public List<UserEntity> GetUsersBasedOnLabel(string label)
+        {
+            return userRepo.GetUsersBasedOnLabel(label);
         }
     }
 }

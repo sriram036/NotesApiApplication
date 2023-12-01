@@ -1,0 +1,1197 @@
+2023-11-30 12:26:34.4406 DEBUG Hosting starting
+2023-11-30 12:26:34.6176 INFO User profile is available. Using 'C:\Users\sriram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 12:26:35.7525 DEBUG Reading data from file 'C:\Users\sriram\AppData\Local\ASP.NET\DataProtection-Keys\key-ac5a122b-765a-4d38-92ad-5a268f62a71f.xml'.
+2023-11-30 12:26:35.8060 DEBUG Found key {ac5a122b-765a-4d38-92ad-5a268f62a71f}.
+2023-11-30 12:26:35.8348 DEBUG Considering key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with expiration date 2024-02-21 09:58:51Z as default key.
+2023-11-30 12:26:35.9183 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:26:35.9348 DEBUG Decrypting secret element using Windows DPAPI.
+2023-11-30 12:26:35.9375 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:26:35.9375 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-11-30 12:26:35.9375 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-11-30 12:26:35.9556 DEBUG Using key {ac5a122b-765a-4d38-92ad-5a268f62a71f} as the default key.
+2023-11-30 12:26:35.9556 DEBUG Key ring with default key {ac5a122b-765a-4d38-92ad-5a268f62a71f} was loaded during application startup.
+2023-11-30 12:26:35.9556 DEBUG Starting host: rabbitmq://localhost/
+2023-11-30 12:26:36.0894 DEBUG Connect: guest@localhost:5672/
+2023-11-30 12:26:36.6442 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 50658)
+2023-11-30 12:26:37.1007 DEBUG Loaded hosting startup assembly FunDooNotesApplication
+2023-11-30 12:26:37.1007 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-30 12:26:37.1007 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-30 12:26:37.1007 INFO Application started. Press Ctrl+C to shut down.
+2023-11-30 12:26:37.1007 INFO Hosting environment: Development
+2023-11-30 12:26:37.1007 INFO Content root path: C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication
+2023-11-30 12:26:37.1007 DEBUG Hosting started
+2023-11-30 12:26:37.1959 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger  
+2023-11-30 12:26:37.2415 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-11-30 12:26:37.2415 TRACE All hosts are allowed.
+2023-11-30 12:26:37.2513 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:26:37.3710 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:26:37.4093 DEBUG No candidates found for the request path '/swagger'
+2023-11-30 12:26:37.4093 DEBUG Request did not match any endpoints
+2023-11-30 12:26:38.2425 DEBUG Connection ID "18302628895834243073" disconnecting.
+2023-11-30 12:26:38.2425 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/index.html  
+2023-11-30 12:26:38.2510 TRACE All hosts are allowed.
+2023-11-30 12:26:38.2510 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:26:38.2510 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:26:38.2510 DEBUG No candidates found for the request path '/swagger/index.html'
+2023-11-30 12:26:38.2510 DEBUG Request did not match any endpoints
+2023-11-30 12:26:38.2425 INFO Request finished in 1027.6924ms 301 
+2023-11-30 12:26:38.3387 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-11-30 12:26:38.5617 DEBUG Response markup was updated to include browser refresh script injection.
+2023-11-30 12:26:38.5617 INFO Request finished in 321.1866ms 200 text/html;charset=utf-8
+2023-11-30 12:26:38.5617 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/swagger-ui.css  
+2023-11-30 12:26:38.5617 TRACE All hosts are allowed.
+2023-11-30 12:26:38.5617 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/swagger-ui-bundle.js  
+2023-11-30 12:26:38.5617 TRACE All hosts are allowed.
+2023-11-30 12:26:38.5775 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:26:38.5775 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:26:38.5775 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/swagger-ui-standalone-preset.js  
+2023-11-30 12:26:38.5775 TRACE All hosts are allowed.
+2023-11-30 12:26:38.5775 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:26:38.5775 INFO Request starting HTTP/2.0 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js  
+2023-11-30 12:26:38.5775 INFO Request starting HTTP/2.0 GET https://localhost:44370/_vs/browserLink  
+2023-11-30 12:26:38.5775 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:26:38.5775 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:26:38.5775 DEBUG No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-11-30 12:26:38.5775 DEBUG No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-11-30 12:26:38.5775 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:26:38.5775 DEBUG Request did not match any endpoints
+2023-11-30 12:26:38.5775 DEBUG Request did not match any endpoints
+2023-11-30 12:26:38.5775 DEBUG No candidates found for the request path '/swagger/swagger-ui.css'
+2023-11-30 12:26:38.5775 DEBUG Request did not match any endpoints
+2023-11-30 12:26:38.5775 INFO Request finished in 8.9079ms 200 application/javascript; charset=utf-8
+2023-11-30 12:26:38.5977 TRACE Range header's value is empty.
+2023-11-30 12:26:38.5977 TRACE Range header's value is empty.
+2023-11-30 12:26:38.5977 TRACE Range header's value is empty.
+2023-11-30 12:26:38.6635 INFO Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-30 12:26:38.6635 INFO Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-30 12:26:38.6635 INFO Request finished in 89.1924ms 200 application/javascript
+2023-11-30 12:26:38.6635 INFO Request finished in 93.5663ms 200 text/css
+2023-11-30 12:26:38.6948 INFO Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-30 12:26:38.6948 INFO Request finished in 119.393ms 200 application/javascript
+2023-11-30 12:26:38.6948 INFO Request finished in 120.8796ms 200 text/javascript; charset=UTF-8
+2023-11-30 12:26:39.1030 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/v1/swagger.json  
+2023-11-30 12:26:39.1030 TRACE All hosts are allowed.
+2023-11-30 12:26:39.1030 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:26:39.1094 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:26:39.1094 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-30 12:26:39.1094 DEBUG Request did not match any endpoints
+2023-11-30 12:26:39.4726 INFO Request finished in 369.8662ms 200 application/json;charset=utf-8
+2023-11-30 12:32:51.5731 DEBUG Hosting starting
+2023-11-30 12:32:51.7160 INFO User profile is available. Using 'C:\Users\sriram\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-11-30 12:32:52.2076 DEBUG Reading data from file 'C:\Users\sriram\AppData\Local\ASP.NET\DataProtection-Keys\key-ac5a122b-765a-4d38-92ad-5a268f62a71f.xml'.
+2023-11-30 12:32:52.2192 DEBUG Found key {ac5a122b-765a-4d38-92ad-5a268f62a71f}.
+2023-11-30 12:32:52.2192 DEBUG Considering key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with expiration date 2024-02-21 09:58:51Z as default key.
+2023-11-30 12:32:52.2834 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:32:52.2953 DEBUG Decrypting secret element using Windows DPAPI.
+2023-11-30 12:32:52.2953 DEBUG Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=3.1.32.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-11-30 12:32:52.2953 DEBUG Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC.
+2023-11-30 12:32:52.2953 DEBUG Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC.
+2023-11-30 12:32:52.2953 DEBUG Using key {ac5a122b-765a-4d38-92ad-5a268f62a71f} as the default key.
+2023-11-30 12:32:52.2953 DEBUG Key ring with default key {ac5a122b-765a-4d38-92ad-5a268f62a71f} was loaded during application startup.
+2023-11-30 12:32:52.3164 DEBUG Starting host: rabbitmq://localhost/
+2023-11-30 12:32:52.4363 DEBUG Connect: guest@localhost:5672/
+2023-11-30 12:32:52.8635 DEBUG Connected: guest@localhost:5672/ (address: amqp://localhost:5672, local: 50706)
+2023-11-30 12:32:53.0561 DEBUG Loaded hosting startup assembly FunDooNotesApplication
+2023-11-30 12:32:53.0561 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-11-30 12:32:53.0561 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-11-30 12:32:53.0561 INFO Application started. Press Ctrl+C to shut down.
+2023-11-30 12:32:53.0561 INFO Hosting environment: Development
+2023-11-30 12:32:53.0561 INFO Content root path: C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication
+2023-11-30 12:32:53.0561 DEBUG Hosting started
+2023-11-30 12:32:53.1091 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/index.html  
+2023-11-30 12:32:53.1579 DEBUG Wildcard detected, all requests with hosts will be allowed.
+2023-11-30 12:32:53.1579 TRACE All hosts are allowed.
+2023-11-30 12:32:53.1579 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:32:53.2938 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:32:53.3370 DEBUG No candidates found for the request path '/swagger/index.html'
+2023-11-30 12:32:53.3370 DEBUG Request did not match any endpoints
+2023-11-30 12:32:53.4092 DEBUG Response markup is scheduled to include browser refresh script injection.
+2023-11-30 12:32:53.6266 INFO Request starting HTTP/2.0 GET https://localhost:44370/_framework/aspnetcore-browser-refresh.js  
+2023-11-30 12:32:53.6266 INFO Request starting HTTP/2.0 GET https://localhost:44370/_vs/browserLink  
+2023-11-30 12:32:53.6395 INFO Request finished in 11.6857ms 200 application/javascript; charset=utf-8
+2023-11-30 12:32:53.7586 INFO Request finished in 122.2159ms 200 text/javascript; charset=UTF-8
+2023-11-30 12:32:54.2589 DEBUG Response markup was updated to include browser refresh script injection.
+2023-11-30 12:32:54.2589 INFO Request finished in 1155.1319ms 200 text/html;charset=utf-8
+2023-11-30 12:32:54.3365 INFO Request starting HTTP/2.0 GET https://localhost:44370/swagger/v1/swagger.json  
+2023-11-30 12:32:54.3365 TRACE All hosts are allowed.
+2023-11-30 12:32:54.3365 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:32:54.3365 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:32:54.3365 DEBUG No candidates found for the request path '/swagger/v1/swagger.json'
+2023-11-30 12:32:54.3365 DEBUG Request did not match any endpoints
+2023-11-30 12:32:54.6411 INFO Request finished in 304.5975ms 200 application/json;charset=utf-8
+2023-11-30 12:34:15.7810 INFO Request starting HTTP/2.0 GET https://localhost:44370/api/Users/GetAll?Email=sri%40gmail.com&enableCache=false  
+2023-11-30 12:34:15.7810 TRACE All hosts are allowed.
+2023-11-30 12:34:15.7810 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:34:15.8104 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:34:15.8274 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:34:15.8274 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:34:15.8274 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:34:15.8274 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:34:15.8427 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexTypeModelBinderProvider
+2023-11-30 12:34:15.9224 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:34:15.9224 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:34:15.9224 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:34:15.9224 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:34:15.9224 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:34:15.9224 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:34:15.9224 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:34:16.1754 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-11-30 12:34:16.2043 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:34:16.2043 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:34:16.2185 DEBUG Attempting to bind parameter 'Email' of type 'System.String' using the name 'Email' in request data ...
+2023-11-30 12:34:16.2185 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:34:16.2185 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:34:16.2185 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:34:16.2185 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:34:16.2185 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:34:16.2185 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' using the name 'enableCache' in request data ...
+2023-11-30 12:34:16.2185 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:34:16.2185 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:34:16.2185 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:34:16.2185 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:34:16.2185 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:34:16.2185 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:34:16.2185 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:34:16.2185 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:34:16.2185 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:34:16.2332 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (sri@gmail.com, False)
+2023-11-30 12:34:17.2234 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:34:17.4518 DEBUG queryContext => new QueryingEnumerable<UserEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache, 
+    null, 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, int[], ResultCoordinator, UserEntity>, 
+    RepositoryLayer.Context.FunDooDBContext, 
+    DiagnosticsLogger<Query>
+)
+2023-11-30 12:34:17.4846 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:34:17.7625 DEBUG Created DbCommand for 'ExecuteReader' (264ms).
+2023-11-30 12:34:17.7739 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:34:18.1340 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:34:18.1440 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:34:18.2858 INFO Executed DbCommand (134ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:34:18.3567 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:34:18.3903 DEBUG A data reader was disposed.
+2023-11-30 12:34:18.3903 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:34:18.4105 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:34:18.4256 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2177.8051ms.
+2023-11-30 12:34:18.4256 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:34:18.4256 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:34:18.4256 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:34:18.4256 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:34:18.4256 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:34:18.4256 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:34:18.4256 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:34:18.4256 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:34:18.4413 DEBUG Attempting to select an output formatter based on Accept header 'text/plain'.
+2023-11-30 12:34:18.4413 DEBUG Could not find an output formatter based on content negotiation. Accepted types were (text/plain)
+2023-11-30 12:34:18.4413 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:34:18.4413 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:34:18.4413 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:34:18.4413 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:34:18.4701 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:34:18.4701 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:34:18.4701 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:34:18.4852 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 2552.0289ms
+2023-11-30 12:34:18.4852 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:34:18.4852 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:34:18.4852 INFO Request finished in 2714.8411ms 200 application/json; charset=utf-8
+2023-11-30 12:37:04.2954 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:04.2954 TRACE All hosts are allowed.
+2023-11-30 12:37:04.2954 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:04.2999 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:04.2999 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:04.2999 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:04.2999 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:04.2999 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:04.2999 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:04.2999 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:04.2999 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:04.2999 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:04.2999 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:04.2999 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:04.2999 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:04.2999 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:04.2999 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:04.2999 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:04.2999 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:04.2999 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:04.2999 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:04.2999 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:04.2999 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:04.2999 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:04.2999 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:04.2999 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:04.2999 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:04.2999 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:04.2999 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:04.2999 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:04.2999 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:04.2999 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:04.2999 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:04.2999 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:04.3712 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:04.3712 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:04.3712 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:04.3712 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:04.3712 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:04.3739 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:04.3739 INFO Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:04.3739 DEBUG A data reader was disposed.
+2023-11-30 12:37:04.3739 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:04.3739 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:04.3739 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 77.7828ms.
+2023-11-30 12:37:04.3739 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:04.3739 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:04.3739 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:04.3739 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:04.3739 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:04.3739 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:04.3739 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:04.3739 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:04.3739 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:04.3739 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:04.3739 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:04.3739 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:04.3739 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:04.3739 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:04.3739 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:04.3739 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:04.3739 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 82.4456ms
+2023-11-30 12:37:04.3739 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:04.3950 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:04.3950 INFO Request finished in 100.0483ms 200 application/json; charset=utf-8
+2023-11-30 12:37:22.2578 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:22.2578 TRACE All hosts are allowed.
+2023-11-30 12:37:22.2578 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:22.2578 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:22.2578 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:22.2578 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:22.2578 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:22.2578 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:22.2578 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:22.2657 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:22.2657 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:22.2657 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:22.2657 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:22.2657 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:22.2657 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:22.2657 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:22.2657 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:22.2657 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:22.2657 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:22.2657 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:22.2657 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:22.2657 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:22.2657 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:22.2657 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:22.2657 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:22.2657 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:22.2657 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:22.2657 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:22.2657 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:22.2657 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:22.2657 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:22.2657 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:22.2657 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:22.2657 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:22.2857 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:22.2857 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:22.2857 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:22.2857 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:22.2857 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:22.2857 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:22.2857 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:22.2857 DEBUG A data reader was disposed.
+2023-11-30 12:37:22.2857 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:22.2857 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:22.2857 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 16.5766ms.
+2023-11-30 12:37:22.2857 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:22.2857 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:22.2857 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:22.2857 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:22.2857 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:22.2857 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:22.2857 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:22.2857 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:22.2857 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:22.2857 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:22.2857 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:22.2857 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:22.2857 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:22.2857 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:22.2857 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:22.2857 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:22.2857 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 24.623ms
+2023-11-30 12:37:22.2857 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:22.2857 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:22.2857 INFO Request finished in 37.33ms 200 application/json; charset=utf-8
+2023-11-30 12:37:25.4448 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:25.4448 TRACE All hosts are allowed.
+2023-11-30 12:37:25.4448 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:25.4448 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:25.4448 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:25.4448 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:25.4448 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:25.4448 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:25.4448 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:25.4448 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:25.4448 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:25.4448 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:25.4448 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:25.4448 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:25.4448 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:25.4448 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:25.4448 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:25.4448 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:25.4534 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:25.4534 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:25.4534 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:25.4534 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:25.4534 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:25.4534 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:25.4534 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:25.4534 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:25.4534 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:25.4534 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:25.4534 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:25.4534 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:25.4534 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:25.4534 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:25.4534 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:25.4534 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:25.4534 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:25.4534 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:25.4534 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:25.4534 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:25.4534 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:25.4534 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:25.4534 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:25.4534 DEBUG A data reader was disposed.
+2023-11-30 12:37:25.4534 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:25.4534 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:25.4534 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.0284ms.
+2023-11-30 12:37:25.4534 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:25.4534 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:25.4534 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:25.4534 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:25.4534 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:25.4534 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:25.4534 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:25.4534 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:25.4534 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:25.4534 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:25.4534 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:25.4534 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:25.4534 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:25.4534 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:25.4534 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:25.4534 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:25.4534 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 12.7312ms
+2023-11-30 12:37:25.4534 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:25.4745 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:25.4745 INFO Request finished in 30.0037ms 200 application/json; charset=utf-8
+2023-11-30 12:37:27.0063 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:27.0063 TRACE All hosts are allowed.
+2023-11-30 12:37:27.0063 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:27.0063 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:27.0063 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:27.0063 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:27.0063 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:27.0063 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:27.0063 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:27.0063 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:27.0063 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:27.0063 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:27.0063 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:27.0063 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:27.0063 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:27.0063 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:27.0063 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:27.0063 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:27.0063 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:27.0063 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:27.0063 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:27.0063 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:27.0063 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:27.0063 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:27.0063 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:27.0063 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:27.0063 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:27.0063 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:27.0063 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:27.0063 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:27.0063 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:27.0063 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:27.0063 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:27.0063 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:27.0063 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:27.0063 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:27.0063 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:27.0063 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:27.0063 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:27.0063 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:27.0165 INFO Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:27.0165 DEBUG A data reader was disposed.
+2023-11-30 12:37:27.0165 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:27.0165 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:27.0165 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 6.4789ms.
+2023-11-30 12:37:27.0165 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:27.0165 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:27.0165 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:27.0165 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:27.0165 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:27.0165 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:27.0165 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:27.0165 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:27.0165 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:27.0165 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:27.0165 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:27.0165 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:27.0165 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:27.0165 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:27.0165 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:27.0165 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:27.0165 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 9.8163ms
+2023-11-30 12:37:27.0165 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:27.0165 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:27.0165 INFO Request finished in 16.4911ms 200 application/json; charset=utf-8
+2023-11-30 12:37:28.4661 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:28.4661 TRACE All hosts are allowed.
+2023-11-30 12:37:28.4661 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:28.4695 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:28.4695 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:28.4695 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:28.4695 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:28.4695 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:28.4695 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:28.4695 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:28.4695 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:28.4695 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:28.4695 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:28.4695 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:28.4695 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:28.4695 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:28.4695 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:28.4695 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:28.4695 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:28.4695 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:28.4695 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:28.4695 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:28.4695 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:28.4695 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:28.4695 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:28.4695 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:28.4695 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:28.4695 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:28.4695 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:28.4695 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:28.4695 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:28.4695 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:28.4695 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:28.4695 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:28.4695 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:28.4872 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:28.4872 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:28.4872 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:28.4872 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:28.4872 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:28.4872 INFO Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:28.4872 DEBUG A data reader was disposed.
+2023-11-30 12:37:28.5008 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:28.5008 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:28.5008 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 22.3768ms.
+2023-11-30 12:37:28.5008 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:28.5008 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:28.5008 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:28.5008 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:28.5008 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:28.5008 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:28.5008 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:28.5008 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:28.5008 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:28.5008 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:28.5008 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:28.5008 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:28.5008 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:28.5008 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:28.5008 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:28.5008 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:28.5008 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 34.674ms
+2023-11-30 12:37:28.5008 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:28.5189 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:28.5189 INFO Request finished in 53.9448ms 200 application/json; charset=utf-8
+2023-11-30 12:37:45.9897 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:45.9897 TRACE All hosts are allowed.
+2023-11-30 12:37:45.9897 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:45.9897 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:45.9897 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:45.9897 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:45.9897 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:45.9897 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:45.9897 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:45.9897 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:45.9897 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:45.9897 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:45.9897 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:45.9897 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:45.9897 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:45.9897 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:45.9897 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:45.9897 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:45.9897 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:45.9897 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:45.9897 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:45.9897 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:45.9897 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:45.9991 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:45.9991 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:45.9991 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:45.9991 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:45.9991 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:45.9991 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:45.9991 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:45.9991 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:45.9991 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:45.9991 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:45.9991 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:45.9991 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:45.9991 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:45.9991 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:45.9991 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:45.9991 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:45.9991 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:45.9991 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:45.9991 DEBUG A data reader was disposed.
+2023-11-30 12:37:45.9991 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:45.9991 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:45.9991 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.9055ms.
+2023-11-30 12:37:45.9991 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:45.9991 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:45.9991 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:45.9991 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:45.9991 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:45.9991 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:45.9991 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:45.9991 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:45.9991 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:45.9991 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:45.9991 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:45.9991 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:45.9991 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:45.9991 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:45.9991 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:45.9991 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:45.9991 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 8.624ms
+2023-11-30 12:37:45.9991 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:45.9991 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:45.9991 INFO Request finished in 18.4271ms 200 application/json; charset=utf-8
+2023-11-30 12:37:48.3039 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:48.3039 TRACE All hosts are allowed.
+2023-11-30 12:37:48.3039 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:48.3039 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:48.3039 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:48.3039 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:48.3039 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:48.3039 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:48.3039 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:48.3039 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:48.3039 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:48.3039 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:48.3039 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:48.3039 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:48.3039 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:48.3039 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:48.3039 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:48.3039 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:48.3039 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:48.3039 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:48.3039 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:48.3039 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:48.3039 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:48.3039 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:48.3039 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:48.3039 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:48.3039 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:48.3039 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:48.3039 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:48.3039 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:48.3039 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:48.3039 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:48.3039 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:48.3039 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:48.3039 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:48.3039 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:48.3039 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:48.3039 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:48.3039 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:48.3039 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:48.3039 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:48.3039 DEBUG A data reader was disposed.
+2023-11-30 12:37:48.3039 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:48.3039 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:48.3039 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4.2624ms.
+2023-11-30 12:37:48.3039 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:48.3039 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:48.3039 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:48.3039 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:48.3039 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:48.3039 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:48.3039 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:48.3039 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:48.3039 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:48.3039 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:48.3039 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:48.3039 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:48.3039 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:48.3039 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:48.3039 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:48.3039 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:48.3138 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 7.9484ms
+2023-11-30 12:37:48.3138 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:48.3138 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:48.3138 INFO Request finished in 19.5474ms 200 application/json; charset=utf-8
+2023-11-30 12:37:59.3364 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:37:59.3364 TRACE All hosts are allowed.
+2023-11-30 12:37:59.3364 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:37:59.3364 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:37:59.3364 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:37:59.3364 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:37:59.3364 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:59.3364 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:59.3364 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:37:59.3364 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:37:59.3364 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:37:59.3364 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:37:59.3364 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:37:59.3364 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:37:59.3364 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:59.3364 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:37:59.3364 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:59.3364 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:59.3364 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:59.3364 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:59.3364 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:37:59.3364 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:37:59.3364 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:59.3364 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:59.3364 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:59.3364 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:59.3364 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:37:59.3364 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:37:59.3364 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:59.3364 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:59.3364 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:59.3364 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:59.3364 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:37:59.3364 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:37:59.3364 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:37:59.3364 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:37:59.3364 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:37:59.3364 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:59.3364 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:59.3364 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:59.3364 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:37:59.3364 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3364 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3364 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3499 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3499 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3499 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3499 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:37:59.3499 DEBUG A data reader was disposed.
+2023-11-30 12:37:59.3499 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:59.3499 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:37:59.3499 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 7.9084ms.
+2023-11-30 12:37:59.3499 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:59.3499 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:37:59.3499 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:59.3499 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:37:59.3499 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:59.3499 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:59.3499 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:59.3499 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:37:59.3499 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:37:59.3499 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:37:59.3499 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:37:59.3499 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:37:59.3499 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:37:59.3499 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:37:59.3499 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:59.3499 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:37:59.3499 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 11.6324ms
+2023-11-30 12:37:59.3499 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:37:59.3499 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:37:59.3499 INFO Request finished in 19.0645ms 200 application/json; charset=utf-8
+2023-11-30 12:38:01.9284 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:38:01.9284 TRACE All hosts are allowed.
+2023-11-30 12:38:01.9284 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:38:01.9284 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:38:01.9284 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:38:01.9284 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:38:01.9284 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:01.9284 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:01.9284 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:38:01.9284 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:38:01.9284 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:38:01.9284 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:38:01.9284 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:38:01.9284 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:38:01.9284 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:01.9284 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:01.9284 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:01.9284 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:01.9284 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:01.9284 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:01.9284 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:01.9284 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:01.9284 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:01.9284 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:01.9284 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:01.9284 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:01.9284 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:01.9284 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:01.9284 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:01.9284 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:01.9284 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:01.9284 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:01.9284 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:38:01.9284 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:38:01.9284 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:38:01.9284 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:38:01.9284 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:38:01.9284 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:01.9284 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:01.9284 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:01.9284 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:01.9284 DEBUG A data reader was disposed.
+2023-11-30 12:38:01.9284 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:01.9284 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:01.9284 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.906ms.
+2023-11-30 12:38:01.9284 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:01.9284 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:01.9284 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:01.9284 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:01.9284 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:01.9284 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:01.9284 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:01.9284 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:38:01.9284 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:38:01.9284 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:38:01.9284 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:38:01.9284 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:38:01.9284 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:38:01.9388 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:01.9388 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:01.9388 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:01.9388 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 9.0816ms
+2023-11-30 12:38:01.9388 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:01.9388 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:38:01.9388 INFO Request finished in 13.1902ms 200 application/json; charset=utf-8
+2023-11-30 12:38:10.8132 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:38:10.8132 TRACE All hosts are allowed.
+2023-11-30 12:38:10.8132 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:38:10.8132 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:38:10.8132 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:38:10.8132 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:38:10.8132 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:10.8132 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:10.8132 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:38:10.8132 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:38:10.8132 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:38:10.8132 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:38:10.8132 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:38:10.8132 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:38:10.8132 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:10.8132 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:10.8132 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:10.8132 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:10.8132 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:10.8132 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:10.8132 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:10.8132 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:10.8132 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:10.8132 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:10.8132 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:10.8132 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:10.8132 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:10.8132 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:10.8132 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:10.8132 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:10.8132 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:10.8132 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:10.8132 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:38:10.8132 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:38:10.8132 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:38:10.8132 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:38:10.8382 DEBUG Created DbCommand for 'ExecuteReader' (1ms).
+2023-11-30 12:38:10.8382 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:10.8382 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:10.8382 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:10.8497 INFO Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:10.8497 DEBUG A data reader was disposed.
+2023-11-30 12:38:10.8497 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:10.8497 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:10.8497 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 29.0795ms.
+2023-11-30 12:38:10.8497 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:10.8497 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:10.8497 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:10.8497 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:10.8497 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:10.8497 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:10.8497 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:10.8497 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:38:10.8497 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:38:10.8497 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:38:10.8497 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:38:10.8497 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:38:10.8497 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:38:10.8497 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:10.8497 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:10.8497 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:10.8497 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 33.0846ms
+2023-11-30 12:38:10.8497 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:10.8497 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:38:10.8497 INFO Request finished in 41.3702ms 200 application/json; charset=utf-8
+2023-11-30 12:38:12.6634 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:38:12.6634 TRACE All hosts are allowed.
+2023-11-30 12:38:12.6634 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:38:12.6634 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:38:12.6634 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:38:12.6634 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:38:12.6634 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:12.6634 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:12.6634 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:38:12.6634 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:38:12.6634 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:38:12.6634 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:38:12.6634 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:38:12.6634 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:38:12.6634 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:12.6634 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:12.6634 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:12.6634 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:12.6634 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:12.6634 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:12.6634 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:12.6634 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:12.6634 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:12.6634 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:12.6634 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:12.6634 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:12.6634 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:12.6634 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:12.6634 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:12.6634 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:12.6634 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:12.6634 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:12.6634 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:38:12.6634 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:38:12.6634 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:38:12.6634 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:38:12.6634 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:38:12.6634 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:12.6634 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:12.6634 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:12.6634 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:12.6634 DEBUG A data reader was disposed.
+2023-11-30 12:38:12.6634 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:12.6634 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:12.6634 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3.5572ms.
+2023-11-30 12:38:12.6634 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:12.6634 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:12.6634 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:12.6634 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:12.6634 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:12.6634 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:12.6634 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:12.6634 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:38:12.6634 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:38:12.6634 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:38:12.6634 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:38:12.6724 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:38:12.6724 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:38:12.6724 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:12.6724 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:12.6724 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:12.6724 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 6.7903ms
+2023-11-30 12:38:12.6724 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:12.6724 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:38:12.6724 INFO Request finished in 12.4464ms 200 application/json; charset=utf-8
+2023-11-30 12:38:14.4246 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:38:14.4246 TRACE All hosts are allowed.
+2023-11-30 12:38:14.4246 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:38:14.4259 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:38:14.4259 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:38:14.4259 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:38:14.4259 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:14.4259 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:14.4259 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:38:14.4259 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:38:14.4259 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:38:14.4259 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:38:14.4259 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:38:14.4259 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:38:14.4259 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:14.4259 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:14.4259 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:14.4259 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:14.4259 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:14.4259 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:14.4259 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:14.4259 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:14.4259 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:14.4259 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:14.4259 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:14.4259 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:14.4259 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:14.4259 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:14.4259 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:14.4259 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:14.4259 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:14.4259 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:14.4259 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:38:14.4259 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:38:14.4259 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:38:14.4259 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:38:14.4259 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:38:14.4259 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:14.4259 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:14.4259 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:14.4259 INFO Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:14.4259 DEBUG A data reader was disposed.
+2023-11-30 12:38:14.4259 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:14.4259 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:14.4259 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.7699ms.
+2023-11-30 12:38:14.4259 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:14.4259 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:14.4259 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:14.4259 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:14.4259 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:14.4259 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:14.4259 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:14.4259 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:38:14.4259 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:38:14.4259 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:38:14.4259 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:38:14.4259 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:38:14.4259 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:38:14.4259 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:14.4259 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:14.4259 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:14.4259 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 8.9651ms
+2023-11-30 12:38:14.4259 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:14.4259 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:38:14.4259 INFO Request finished in 14.044ms 200 application/json; charset=utf-8
+2023-11-30 12:38:15.9629 INFO Request starting HTTP/1.1 GET https://localhost:44370/api/Users/GetAll  
+2023-11-30 12:38:15.9629 TRACE All hosts are allowed.
+2023-11-30 12:38:15.9629 TRACE Performing protect operation to key {ac5a122b-765a-4d38-92ad-5a268f62a71f} with purposes ('C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication', 'SessionMiddleware').
+2023-11-30 12:38:15.9629 DEBUG AuthenticationScheme: Bearer was not authenticated.
+2023-11-30 12:38:15.9629 DEBUG 1 candidate(s) found for the request path '/api/Users/GetAll'
+2023-11-30 12:38:15.9629 DEBUG Endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)' with route pattern 'api/Users/GetAll' is valid for the request path '/api/Users/GetAll'
+2023-11-30 12:38:15.9629 DEBUG Request matched endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:15.9629 INFO Executing endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:15.9629 INFO Route matched with {action = "GetAllUsersWithCache", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[RepositoryLayer.Entities.UserEntity]] GetAllUsersWithCache(System.String, Boolean) on controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication).
+2023-11-30 12:38:15.9629 DEBUG Execution plan of authorization filters (in the following order): None
+2023-11-30 12:38:15.9629 DEBUG Execution plan of resource filters (in the following order): None
+2023-11-30 12:38:15.9629 DEBUG Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2023-11-30 12:38:15.9629 DEBUG Execution plan of exception filters (in the following order): None
+2023-11-30 12:38:15.9629 DEBUG Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2023-11-30 12:38:15.9629 DEBUG Executing controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:15.9629 DEBUG Executed controller factory for controller FunDooNotesApplication.Controllers.UsersController (FunDooNotesApplication)
+2023-11-30 12:38:15.9629 DEBUG Attempting to bind parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:15.9629 DEBUG Could not find a value in the request with name '' for binding parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:15.9629 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:15.9629 DEBUG Done attempting to bind parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:15.9629 DEBUG Attempting to validate the bound parameter 'Email' of type 'System.String' ...
+2023-11-30 12:38:15.9629 DEBUG Done attempting to validate the bound parameter 'Email' of type 'System.String'.
+2023-11-30 12:38:15.9629 DEBUG Attempting to bind parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:15.9629 DEBUG Could not find a value in the request with name '' for binding parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:15.9629 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:15.9629 DEBUG Done attempting to bind parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:15.9629 DEBUG Attempting to validate the bound parameter 'enableCache' of type 'System.Boolean' ...
+2023-11-30 12:38:15.9629 DEBUG Done attempting to validate the bound parameter 'enableCache' of type 'System.Boolean'.
+2023-11-30 12:38:15.9629 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:15.9629 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:15.9629 TRACE Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:15.9629 TRACE Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:15.9629 INFO Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) - Validation state: Valid
+2023-11-30 12:38:15.9629 TRACE Executing action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) with arguments (, False)
+2023-11-30 12:38:15.9629 INFO Entity Framework Core 3.1.0 initialized 'FunDooDBContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-11-30 12:38:15.9629 DEBUG Creating DbCommand for 'ExecuteReader'.
+2023-11-30 12:38:15.9629 DEBUG Created DbCommand for 'ExecuteReader' (0ms).
+2023-11-30 12:38:15.9629 DEBUG Opening connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:15.9629 DEBUG Opened connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:15.9629 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:15.9629 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [u].[UserId], [u].[ChangedAt], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG Context 'FunDooDBContext' started tracking 'UserEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-11-30 12:38:15.9629 DEBUG A data reader was disposed.
+2023-11-30 12:38:15.9629 DEBUG Closing connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:15.9629 DEBUG Closed connection to database 'FunDooNotesDB' on server 'DESKTOP-62VIJ9H\SQLEXPRESS'.
+2023-11-30 12:38:15.9629 INFO Executed action method FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.7902ms.
+2023-11-30 12:38:15.9629 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:15.9629 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2023-11-30 12:38:15.9629 TRACE Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:15.9629 TRACE Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2023-11-30 12:38:15.9629 TRACE Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:15.9629 TRACE Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:15.9629 TRACE Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:15.9629 DEBUG List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2023-11-30 12:38:15.9629 DEBUG No information found on request to perform content negotiation.
+2023-11-30 12:38:15.9629 DEBUG Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-11-30 12:38:15.9629 DEBUG Attempting to select the first formatter in the output formatters list which can write the result.
+2023-11-30 12:38:15.9629 DEBUG Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-11-30 12:38:15.9629 INFO Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[RepositoryLayer.Entities.UserEntity, RepositoryLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-30 12:38:15.9629 TRACE After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2023-11-30 12:38:15.9629 TRACE Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:15.9629 TRACE Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2023-11-30 12:38:15.9629 INFO Executed action FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication) in 5.2499ms
+2023-11-30 12:38:15.9629 INFO Executed endpoint 'FunDooNotesApplication.Controllers.UsersController.GetAllUsersWithCache (FunDooNotesApplication)'
+2023-11-30 12:38:15.9746 DEBUG 'FunDooDBContext' disposed.
+2023-11-30 12:38:15.9746 INFO Request finished in 11.9096ms 200 application/json; charset=utf-8

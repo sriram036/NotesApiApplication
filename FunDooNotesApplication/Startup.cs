@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -48,6 +49,7 @@ namespace FunDooNotesApplication
             services.AddTransient<ILabelRepo, LabelRepo>();
             services.AddTransient<ICollaboratorBusiness, CollaboratorBusiness>();
             services.AddTransient<ICollaboratorRepo, CollaboratorRepo>();
+            services.AddStackExchangeRedisCache(options => { options.Configuration = Configuration["RedisCacheUrl"]; });
             services.AddDistributedMemoryCache();
             services.AddSession(x =>
             {
@@ -127,7 +129,6 @@ namespace FunDooNotesApplication
             }
 
             app.UseSession();
-
 
             app.UseAuthentication();
 

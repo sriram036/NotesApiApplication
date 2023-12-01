@@ -25,32 +25,15 @@ namespace FunDooNotesApplication.Controllers
         public ActionResult AddLabel(string LabelName, int NoteId)
         {
             int UserId = int.Parse(User.FindFirst("UserId").Value);
-            int labelEntity = labelBusiness.AddLabel(LabelName, NoteId, UserId);
-
-            switch (labelEntity)
+            bool labelEntity = labelBusiness.AddLabel(LabelName, NoteId, UserId);
+            if (labelEntity)
             {
-                case 1:
-                    {
-                        return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Label Addded", Data = LabelName });
-                    }break;
-                case 2:
-                    {
-                        return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Label Not Added", Data = "NoteId not Matched" });
-                    }break;
-                case 3:
-                    {
-                        return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Label Not Added", Data = "UserId not Matched" });
-                    }break;
-                case 4:
-                    {
-                        return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Label Not Added", Data = "Label Already Available" });
-                    }break;
-                default:
-                    {
-                        return null;
-                    }
+                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Label Added", Data = LabelName });
             }
-            
+            else
+            {
+                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Label not Added", Data = LabelName + " is Already Exist" });
+            }
         }
 
         [HttpGet]

@@ -17,42 +17,55 @@ namespace RepositoryLayer.Services
             this.funDooDBContext = funDooDBContext;
         }
 
-        public int AddLabel(string LabelName, int NoteId, int UserId)
+        public bool AddLabel(string LabelName, int NoteId, int UserId)
         {
-            List<NotesEntity> notes = funDooDBContext.Notes.ToList().FindAll(User => User.UserId == UserId);
-            if(notes.Any())
+            if(funDooDBContext.Labels is null)
             {
-                NotesEntity notesEntity = notes.Find(note => note.NotesId == NoteId);
-                if (notesEntity != null)
-                {
-                    List<LabelEntity> labels = funDooDBContext.Labels.ToList().FindAll(label => label.NotesId == NoteId);
-                    LabelEntity label = labels.Find(name => name.LabelName == LabelName);
-                    if(label is null)
-                    {
-                        LabelEntity labelEntity = new LabelEntity();
-                        labelEntity.LabelName = LabelName;
-                        labelEntity.CreatedAt = DateTime.Now;
-                        labelEntity.UpdatedAt = DateTime.Now;
-                        labelEntity.NotesId = NoteId;
-                        labelEntity.UserId = UserId;
-                        funDooDBContext.Labels.Add(labelEntity);
-                        funDooDBContext.SaveChanges();
-                        return 1;
-                    }
-                    else
-                    {
-                        return 4; 
-                    }
-                    
-                }
-                else
-                {
-                    return 2;
-                }
+                LabelEntity labelEntity = new LabelEntity();
+                labelEntity.LabelName = LabelName;
+                labelEntity.CreatedAt = DateTime.Now;
+                labelEntity.UpdatedAt = DateTime.Now;
+                labelEntity.NotesId = NoteId;
+                labelEntity.UserId = UserId;
+                funDooDBContext.Labels.Add(labelEntity);
+                funDooDBContext.SaveChanges();
+                return true;
             }
             else
             {
-                return 3;
+                List<LabelEntity> labels = funDooDBContext.Labels.ToList().FindAll(Note => Note.NotesId == NoteId && Note.UserId == UserId);
+                if (labels is null)
+                {
+                    LabelEntity labelEntity = new LabelEntity();
+                    labelEntity.LabelName = LabelName;
+                    labelEntity.CreatedAt = DateTime.Now;
+                    labelEntity.UpdatedAt = DateTime.Now;
+                    labelEntity.NotesId = NoteId;
+                    labelEntity.UserId = UserId;
+                    funDooDBContext.Labels.Add(labelEntity);
+                    funDooDBContext.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    LabelEntity labelEntity = labels.Find(label => label.LabelName == LabelName && label.UserId == UserId);
+                    if(labelEntity is null)
+                    {
+                        LabelEntity label = new LabelEntity();
+                        label.LabelName = LabelName;
+                        label.CreatedAt = DateTime.Now;
+                        label.UpdatedAt = DateTime.Now;
+                        label.NotesId = NoteId;
+                        label.UserId = UserId;
+                        funDooDBContext.Labels.Add(label);
+                        funDooDBContext.SaveChanges();
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }
             }
         }
 

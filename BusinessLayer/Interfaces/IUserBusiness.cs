@@ -13,5 +13,6 @@ namespace BusinessLayer.Interfaces
         ForgotPasswordModel ForgotPassword(string Email);
         bool ResetPassword(string Email, ResetPasswordModel reset);
         UserEntity LoginToReturnUserEntity(LoginModel loginModel);
+        List<UserEntity> GetUsersBasedOnLabel(string label);
     }
 }

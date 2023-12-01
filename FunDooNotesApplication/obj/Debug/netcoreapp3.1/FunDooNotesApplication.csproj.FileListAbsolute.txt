@@ -77,3 +77,9 @@ C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\D
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
 C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\CloudinaryDotNet.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\sriram\source\repos\FunDooNotesApplication\FunDooNotesApplication\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

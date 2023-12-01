@@ -27,16 +27,23 @@ namespace FunDooNotesApplication.Controllers
         [Route("CreateNote")]
         public ActionResult CreateNote(NotesModel notesModel)
         {
-            //int UserId = int.Parse(User.FindFirst("UserId").Value);
-            int UserId = (int) HttpContext.Session.GetInt32("UserId"); 
-            NotesEntity notesEntity = notesBusiness.CreateNote(UserId, notesModel);
-            if(notesEntity == null)
+            try
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note Not Created", Data = "User Not Found" });
+                //int UserId = int.Parse(User.FindFirst("UserId").Value);
+                int UserId = (int)HttpContext.Session.GetInt32("UserId");
+                NotesEntity notesEntity = notesBusiness.CreateNote(UserId, notesModel);
+                if (notesEntity == null)
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note Not Created", Data = "User Not Found" });
+                }
+                else
+                {
+                    return Ok(new ResponseModel<NotesEntity> { IsSuccess = true, Message = "Note Added Successfully", Data = notesEntity });
+                }
             }
-            else
+            catch(Exception ex)
             {
-                return Ok(new ResponseModel<NotesEntity> { IsSuccess = true, Message = "Note Added Successfully", Data = notesEntity });
+                throw ex;
             }
         }
 
@@ -45,17 +52,23 @@ namespace FunDooNotesApplication.Controllers
         [Route("GetNotesById")]
         public List<NotesEntity> GetNotes()
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            List<NotesEntity> Notes = notesBusiness.GetNotes(UserId);
-            if (Notes != null)
+            try
             {
-                return Notes;
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                List<NotesEntity> Notes = notesBusiness.GetNotes(UserId);
+                if (Notes != null)
+                {
+                    return Notes;
+                }
+                else
+                {
+                    return null;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return null;
+                throw ex;
             }
-            
         }
 
         [Authorize]
@@ -63,17 +76,24 @@ namespace FunDooNotesApplication.Controllers
         [Route("UpdateNote")]
         public ActionResult UpdateNote(int NotesId, NotesModel notesModel)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-
-            NotesEntity notesEntity = notesBusiness.UpdateNote(NotesId, notesModel, UserId);
-
-            if(notesEntity == null)
+            try
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note Not Updated", Data = "UserId is not matched" });
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+
+                NotesEntity notesEntity = notesBusiness.UpdateNote(NotesId, notesModel, UserId);
+
+                if (notesEntity == null)
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note Not Updated", Data = "UserId is not matched" });
+                }
+                else
+                {
+                    return Ok(new ResponseModel<NotesEntity> { IsSuccess = true, Message = "Note Updated Successfully", Data = notesEntity });
+                }
             }
-            else
+            catch(Exception ex)
             {
-                return Ok(new ResponseModel<NotesEntity> { IsSuccess = true, Message = "Note Updated Successfully", Data = notesEntity});
+                throw ex;
             }
         }
 
@@ -82,16 +102,23 @@ namespace FunDooNotesApplication.Controllers
         [Route("DeleteNote")]
         public ActionResult DeleteNote(int NotesId)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsNoteDeleted = notesBusiness.DeleteNote(NotesId, UserId);
+            try
+            {
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                bool IsNoteDeleted = notesBusiness.DeleteNote(NotesId, UserId);
 
-            if(IsNoteDeleted)
-            {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Note Deleted", Data = "UserId Matched"});
+                if (IsNoteDeleted)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Note Deleted", Data = "UserId Matched" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note not Deleted", Data = "UserId is not Matched" });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note not Deleted", Data = "UserId is not Matched" });
+                throw ex;
             }
         }
 
@@ -100,19 +127,26 @@ namespace FunDooNotesApplication.Controllers
         [Route("PinNote")]
         public ActionResult PinNote(int NotesId)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            int IsPin = notesBusiness.PinNote(NotesId, UserId);
-            if(IsPin == 2)
+            try
             {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Pinned" });
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                int IsPin = notesBusiness.PinNote(NotesId, UserId);
+                if (IsPin == 2)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Pinned" });
+                }
+                else if (IsPin == 1)
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnPinned" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                }
             }
-            else if (IsPin == 1)
+            catch (Exception ex)
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnPinned" });
-            }
-            else
-            {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                throw ex;
             }
         }
 
@@ -121,19 +155,26 @@ namespace FunDooNotesApplication.Controllers
         [Route("ArchiveNote")]
         public ActionResult ArchiveNote(int NotesId)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            int IsArchive = notesBusiness.ArchiveNote(NotesId, UserId);
-            if (IsArchive == 2)
+            try
             {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Archived" });
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                int IsArchive = notesBusiness.ArchiveNote(NotesId, UserId);
+                if (IsArchive == 2)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Archived" });
+                }
+                else if (IsArchive == 1)
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnArchived" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                }
             }
-            else if (IsArchive == 1)
+            catch (Exception ex)
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnArchived" });
-            }
-            else
-            {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                throw ex;
             }
         }
 
@@ -142,19 +183,26 @@ namespace FunDooNotesApplication.Controllers
         [Route("TrashNote")]
         public ActionResult TrashNote(int NotesId)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            int IsTrash = notesBusiness.TrashNote(NotesId, UserId);
-            if (IsTrash == 2)
+            try
             {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Trashed" });
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                int IsTrash = notesBusiness.TrashNote(NotesId, UserId);
+                if (IsTrash == 2)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Data Changed", Data = "Note is Trashed" });
+                }
+                else if (IsTrash == 1)
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnTrashed" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                }
             }
-            else if (IsTrash == 1)
+            catch(Exception ex)
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Changed", Data = "Note is UnTrashed" });
-            }
-            else
-            {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                throw ex;
             }
         }
 
@@ -163,16 +211,23 @@ namespace FunDooNotesApplication.Controllers
         [Route("AddColour")]
         public ActionResult AddColourInNote(int NotesId, string Colour)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool AddedColour = notesBusiness.AddColourInNote(NotesId, Colour, UserId);
+            try
+            {
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                bool AddedColour = notesBusiness.AddColourInNote(NotesId, Colour, UserId);
 
-            if(AddedColour)
-            {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Colour is Added", Data = Colour});
+                if (AddedColour)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Colour is Added", Data = Colour });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Colour is not Added", Data = "User Not Found" });
+                }
             }
-            else
-            {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Colour is not Added", Data = "User Not Found"});
+            catch (Exception ex) 
+            { 
+                throw ex; 
             }
         }
 
@@ -181,20 +236,27 @@ namespace FunDooNotesApplication.Controllers
         [Route("RestoreNote")]
         public ActionResult RestoreNote(int NotesId)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            int IsRestored = notesBusiness.RestoreNote(NotesId, UserId);
+            try
+            {
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                int IsRestored = notesBusiness.RestoreNote(NotesId, UserId);
 
-            if (IsRestored == 1)
-            {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Note is Restored", Data = "UserId Matched" });
+                if (IsRestored == 1)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Note is Restored", Data = "UserId Matched" });
+                }
+                else if (IsRestored == 2)
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note is not Restored", Data = "Note is not in Trash" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                }
             }
-            else if (IsRestored == 2)
+            catch(Exception ex)
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Note is not Restored", Data = "Note is not in Trash" });
-            }
-            else
-            {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Data Not Changed", Data = "UserId Not Matched" });
+                throw ex;
             }
         }
 
@@ -203,15 +265,22 @@ namespace FunDooNotesApplication.Controllers
         [Route("AddImage")]
         public ActionResult AddImage(int NoteId, IFormFile Image)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsImageAdded = notesBusiness.AddImage(NoteId, UserId, Image);
-            if(IsImageAdded)
+            try
             {
-                return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Image Added Successfully", Data = "UserId Matched" });
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                bool IsImageAdded = notesBusiness.AddImage(NoteId, UserId, Image);
+                if (IsImageAdded)
+                {
+                    return Ok(new ResponseModel<string> { IsSuccess = true, Message = "Image Added Successfully", Data = "UserId Matched" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Image Not Added", Data = "UserId not Matched" });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest(new ResponseModel<string> { IsSuccess = false, Message = "Image Not Added", Data = "UserId not Matched" });
+                throw ex;
             }
         }
 
@@ -220,15 +289,22 @@ namespace FunDooNotesApplication.Controllers
         [Route("AddReminder")]
         public ActionResult AddReminder(int NoteId, DateTime Reminder)
         {
-            int UserId = int.Parse(User.FindFirst("UserId").Value);
-            bool IsReminderAdded = notesBusiness.AddReminder(NoteId, UserId, Reminder);
-            if(IsReminderAdded)
+            try
             {
-                return Ok(new ResponseModel<DateTime> { IsSuccess = true, Message = "Reminder Added", Data = Reminder });
+                int UserId = int.Parse(User.FindFirst("UserId").Value);
+                bool IsReminderAdded = notesBusiness.AddReminder(NoteId, UserId, Reminder);
+                if (IsReminderAdded)
+                {
+                    return Ok(new ResponseModel<DateTime> { IsSuccess = true, Message = "Reminder Added", Data = Reminder });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<DateTime> { IsSuccess = false, Message = "Reminder not Added", Data = Reminder });
+                }
             }
-            else
+            catch (Exception ex)
             {
-                return BadRequest(new ResponseModel<DateTime> { IsSuccess = false, Message = "Reminder not Added", Data = Reminder });
+                throw ex;
             }
         }
     }

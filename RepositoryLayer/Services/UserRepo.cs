@@ -156,5 +156,17 @@ namespace RepositoryLayer.Services
                 return userEntity;
             }
         }
+
+        public List<UserEntity> GetUsersBasedOnLabel(string label)
+        {
+            List<int> userIds = funDooDBContext.Labels.ToList().FindAll(x => x.LabelName == label).Select(id => id.UserId).ToList();
+            List<UserEntity> Users = new List<UserEntity>();
+            foreach (int id in userIds)
+            {
+                UserEntity user = funDooDBContext.Users.FirstOrDefault(user => user.UserId == id);
+                Users.Add(user);
+            }
+            return Users;
+        }
     }
 }

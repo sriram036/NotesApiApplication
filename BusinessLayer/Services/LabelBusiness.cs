@@ -16,7 +16,7 @@ namespace BusinessLayer.Services
             this.labelRepo = labelRepo;
         }
 
-        public int AddLabel(string LabelName, int NoteId, int UserId)
+        public bool AddLabel(string LabelName, int NoteId, int UserId)
         {
             return labelRepo.AddLabel(LabelName, NoteId, UserId);
         }
